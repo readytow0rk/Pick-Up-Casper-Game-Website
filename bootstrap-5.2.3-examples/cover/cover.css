@@ -13,6 +13,10 @@
 #difficulty{
   display: none;
 }
+#restart{
+  padding: 0.5rem;
+  display: none;
+}
 #colorCall{
   display: none;
 }
@@ -78,6 +82,8 @@ body {
   height: 37.875rem;
   width: 37.875rem;
   flex-wrap: wrap;
+  background-size: cover;
+  
 }
 .squaresInside{
   height: 12.5rem;

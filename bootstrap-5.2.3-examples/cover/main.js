@@ -19,10 +19,391 @@ let diffBtnW = document.querySelector('#btnSwitchW')
 let diffBtnE = document.querySelector('#btnSwitchE')
 let diffBtnR = document.querySelector('#btnSwitchR')
 let diffBtnT = document.querySelector('#btnSwitchT')
+let restart = document.querySelector('#restart')
+let mainPage = document.querySelector('#mainPage')
+let rules = document.querySelector('#rules')
+let scoreText = document.querySelector('#scoreText')
 
-// switch case
 
-//SETTINGS BUTTON 
+// FIRST lEVEL
+diffBtnQ.addEventListener('click', () => {
+    buttonsLevel.style.display = 'none'
+    difficulty.style.display = 'none'
+    colorBtn.style.display = 'none'
+    start.style.display = 'none'
+    h.style.display = 'block'
+    score.style.display = 'block'
+    timeLeft.style.display = 'block'
+    timeText.style.display = 'block'
+    txt.style.display = 'none'
+    hH.style.display = 'none'
+    grid.style.display = 'flex'
+    restart.style.display = 'block'
+
+    // logic of game
+    let result = 0
+    
+    score.textContent = result
+    let hitPosition
+    let currentTime = 16
+    let timerId = null
+
+function randomSquare(){
+    square.forEach(squaresInside =>{
+        squaresInside.classList.remove('mole')
+    })
+
+    
+    let randomSquare = square[Math.floor(Math.random() * 9)]
+    randomSquare.classList.add('mole') 
+
+    hitPosition = randomSquare.id
+}
+
+square.forEach(squaresInside => {
+    squaresInside.addEventListener('click', () => {
+        if (squaresInside.id == hitPosition){
+            result++
+            score.textContent = result
+            hitPosition = null     
+        }
+    })
+})
+
+
+function moveMole() { 
+    timerId = setInterval(randomSquare, 700)
+}
+
+moveMole()
+
+function countDown() {
+    currentTime-- 
+    timeLeft.textContent =  currentTime
+
+    if(currentTime == 0 ){
+        clearInterval(countDownTimerId)
+        clearInterval(timerId)
+        alert('GAME OVER! YOUR SCORE IS ' + result)
+    }
+
+}
+
+
+let countDownTimerId = setInterval(countDown, 1000)
+     
+});
+restart.addEventListener('click', () => {
+   
+});
+
+
+//start second level 
+diffBtnW.addEventListener('click', () => {
+    buttonsLevel.style.display = 'none'
+    difficulty.style.display = 'none'
+    colorBtn.style.display = 'none'
+    start.style.display = 'none'
+    h.style.display = 'block'
+    score.style.display = 'block'
+    timeLeft.style.display = 'block'
+    timeText.style.display = 'block'
+    txt.style.display = 'none'
+    hH.style.display = 'none'
+    grid.style.display = 'flex'
+    restart.style.display = 'block'
+
+    // logic of game
+    let result = 0
+    
+    score.textContent = result
+    let hitPosition
+    let currentTime = 16
+    let timerId = null
+function randomSquare(){
+    square.forEach(squaresInside =>{
+        squaresInside.classList.remove('mole')
+    })
+
+    
+    let randomSquare = square[Math.floor(Math.random() * 9)]
+    randomSquare.classList.add('mole') 
+
+    hitPosition = randomSquare.id
+}
+
+square.forEach(squaresInside => {
+    squaresInside.addEventListener('click', () => {
+        if (squaresInside.id == hitPosition){
+            result++
+            score.textContent = result
+            hitPosition = null     
+        }
+    })
+})
+
+
+function moveMole() { 
+    timerId = setInterval(randomSquare, 600)
+}
+
+moveMole()
+
+function countDown() {
+    currentTime-- 
+    timeLeft.textContent =  currentTime
+
+    if(currentTime == 0 ){
+        clearInterval(countDownTimerId)
+        clearInterval(timerId)
+        alert('GAME OVER! YOUR SCORE IS ' + result)
+    }
+
+}
+
+
+let countDownTimerId = setInterval(countDown, 1000)
+     
+});
+restart.addEventListener('click', () => {
+    
+});
+// start third level
+diffBtnE.addEventListener('click', () => {
+    buttonsLevel.style.display = 'none'
+    difficulty.style.display = 'none'
+    colorBtn.style.display = 'none'
+    start.style.display = 'none'
+    h.style.display = 'block'
+    score.style.display = 'block'
+    timeLeft.style.display = 'block'
+    timeText.style.display = 'block'
+    txt.style.display = 'none'
+    hH.style.display = 'none'
+    grid.style.display = 'flex'
+    restart.style.display = 'block'
+
+    // logic of game
+    let result = 0
+    
+    score.textContent = result
+    let hitPosition
+    let currentTime = 16
+    let timerId = null
+
+function randomSquare(){
+    square.forEach(squaresInside =>{
+        squaresInside.classList.remove('mole')
+    })
+
+    
+    let randomSquare = square[Math.floor(Math.random() * 9)]
+    randomSquare.classList.add('mole') 
+
+    hitPosition = randomSquare.id
+}
+
+square.forEach(squaresInside => {
+    squaresInside.addEventListener('click', () => {
+        if (squaresInside.id == hitPosition){
+            result++
+            score.textContent = result
+            hitPosition = null     
+        }
+    })
+})
+
+
+function moveMole() { 
+    timerId = setInterval(randomSquare, 400)
+}
+
+moveMole()
+
+function countDown() {
+    currentTime-- 
+    timeLeft.textContent =  currentTime
+
+    if(currentTime == 0 ){
+        clearInterval(countDownTimerId)
+        clearInterval(timerId)
+        alert('GAME OVER! YOUR SCORE IS ' + result)
+    }
+
+}
+
+
+let countDownTimerId = setInterval(countDown, 1000)
+     
+});
+restart.addEventListener('click', () => {
+        
+});
+
+// start 4th level
+diffBtnR.addEventListener('click', () => {
+    buttonsLevel.style.display = 'none'
+    difficulty.style.display = 'none'
+    colorBtn.style.display = 'none'
+    start.style.display = 'none'
+    h.style.display = 'block'
+    score.style.display = 'block'
+    timeLeft.style.display = 'block'
+    timeText.style.display = 'block'
+    txt.style.display = 'none'
+    hH.style.display = 'none'
+    grid.style.display = 'flex'
+    restart.style.display = 'block'
+
+    // logic of game
+    let result = 0
+    
+    score.textContent = result
+    let hitPosition
+    let currentTime = 16
+    let timerId = null
+
+function randomSquare(){
+    square.forEach(squaresInside =>{
+        squaresInside.classList.remove('mole')
+    })
+
+    
+    let randomSquare = square[Math.floor(Math.random() * 9)]
+    randomSquare.classList.add('mole') 
+
+    hitPosition = randomSquare.id
+}
+
+square.forEach(squaresInside => {
+    squaresInside.addEventListener('click', () => {
+        if (squaresInside.id == hitPosition){
+            result++
+            score.textContent = result
+            hitPosition = null     
+        }
+    })
+})
+
+
+function moveMole() { 
+    timerId = setInterval(randomSquare, 250)
+}
+
+moveMole()
+
+function countDown() {
+    currentTime-- 
+    timeLeft.textContent =  currentTime
+
+    if(currentTime == 0 ){
+        clearInterval(countDownTimerId)
+        clearInterval(timerId)
+        alert('GAME OVER! YOUR SCORE IS ' + result)
+    }
+
+}
+
+
+let countDownTimerId = setInterval(countDown, 1000)
+     
+});
+restart.addEventListener('click', () => {
+         
+});
+
+// start 5th level
+
+diffBtnT.addEventListener('click', () => {
+    buttonsLevel.style.display = 'none'
+    difficulty.style.display = 'none'
+    colorBtn.style.display = 'none'
+    start.style.display = 'none'
+    h.style.display = 'block'
+    score.style.display = 'block'
+    timeLeft.style.display = 'block'
+    timeText.style.display = 'block'
+    txt.style.display = 'none'
+    hH.style.display = 'none'
+    grid.style.display = 'flex'
+    restart.style.display = 'block'
+
+    // logic of game
+    let result = 0
+    
+    score.textContent = result
+    let hitPosition
+    let currentTime = 16
+    let timerId = null
+
+function randomSquare(){
+    square.forEach(squaresInside =>{
+        squaresInside.classList.remove('mole')
+    })
+
+    
+    let randomSquare = square[Math.floor(Math.random() * 9)]
+    randomSquare.classList.add('mole') 
+
+    hitPosition = randomSquare.id
+}
+
+square.forEach(squaresInside => {
+    squaresInside.addEventListener('click', () => {
+        if (squaresInside.id == hitPosition){
+            result++
+            score.textContent = result
+            hitPosition = null     
+        }
+    })
+})
+
+
+function moveMole() { 
+    timerId = setInterval(randomSquare, 100)
+}
+
+moveMole()
+
+function countDown() {
+    currentTime-- 
+    timeLeft.textContent =  currentTime
+
+    if(currentTime == 0 ){
+        clearInterval(countDownTimerId)
+        clearInterval(timerId)
+        alert('GAME OVER! YOUR SCORE IS ' + result)
+    }
+
+}
+
+
+let countDownTimerId = setInterval(countDown, 1000)
+     
+});
+restart.addEventListener('click', () => {
+   
+      
+});
+
+// finish with levels
+mainPage.addEventListener('click', () => {
+    start.style.display = 'block'
+    h.style.display = 'block'
+    score.style.display = 'none'
+    timeLeft.style.display = 'none'
+    timeText.style.display = 'none'
+    txt.style.display = 'block'
+    hH.style.display = 'none'
+    grid.style.display = 'none'
+    buttonsLevel.style.display = 'none'
+    difficulty.style.display = 'none'
+    colorBtn.style.display = 'none'
+    restart.style.display = 'none'
+    rules.style.display = 'block'
+    scoreText.style.display = 'none'
+});
+
 settingsBtn.addEventListener('click', () => {
     start.style.display = 'none'
     h.style.display = 'none'
@@ -48,9 +429,11 @@ start.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     let result = 0
-let hitPosition
-let currentTime = 10
-let timerId = null
+    
+    score.textContent = result
+    let hitPosition
+    let currentTime = 16
+    let timerId = null
 
 function randomSquare(){
     square.forEach(squaresInside =>{
