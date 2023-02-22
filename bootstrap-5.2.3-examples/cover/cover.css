@@ -100,8 +100,8 @@ body {
   border-radius: 0.313rem;
 }
 .mole{
-  background-image: url('frog.png');
-  background-size: cover  ;
+  background-image: url('casper1.png');
+  background-size: cover;
 }
 .grid, .square {
   display:none
