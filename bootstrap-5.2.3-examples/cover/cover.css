@@ -20,11 +20,19 @@
 #colorCall{
   display: none;
 }
+#main.page {
+  display: block;
+}
 .buttonsLevel{
   display: none;
   margin: 0 auto;
   text-align: center;
   
+}
+.btn-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /*

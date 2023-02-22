@@ -1,31 +1,56 @@
 const grid = document.querySelector('.grid')
+
 const square = document.querySelectorAll('.squaresInside')
+
 const mole = document.querySelector('.mole')
+
 const timeLeft = document.querySelector('#time-left')
+
 const timeText = document.querySelector('#Time-text')
+
 const hH = document.querySelector('h2')
+
 const score = document.querySelector('#score')
+
 const start = document.querySelector('.btn.btn-lg.btn-secondary.fw-bold.border-white.bg-white')
+
 const h = document.querySelector('h1')
+
 const txt = document.querySelector('.lead')
+
 let body = document.querySelector('body')
+
 const colorFirst = document.querySelector('.changeColorQ')
+
 let colorBtn = document.querySelector('#colorCall')
+
 let settingsBtn = document.querySelector('#settingsBtn')
+
 let buttonsLevel = document.querySelector('.buttonsLevel')
+
 let difficulty = document.querySelector('#difficulty')
+
 let diffBtnQ = document.querySelector('#btnSwitchQ')
+
 let diffBtnW = document.querySelector('#btnSwitchW')
+
 let diffBtnE = document.querySelector('#btnSwitchE')
+
 let diffBtnR = document.querySelector('#btnSwitchR')
+
 let diffBtnT = document.querySelector('#btnSwitchT')
+
 let restart = document.querySelector('#restart')
+
 let mainPage = document.querySelector('#mainPage')
+
 let rules = document.querySelector('#rules')
+
 let scoreText = document.querySelector('#scoreText')
 
 
 // FIRST lEVEL
+
 diffBtnQ.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
     difficulty.style.display = 'none'
@@ -38,14 +63,14 @@ diffBtnQ.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
-    restart.style.display = 'block'
+    
 
     // logic of game
     let result = 0
     
     score.textContent = result
     let hitPosition
-    let currentTime = 16
+    let currentTime = 15
     let timerId = null
 
 function randomSquare(){
@@ -94,7 +119,7 @@ let countDownTimerId = setInterval(countDown, 1000)
      
 });
 restart.addEventListener('click', () => {
-   
+ 
 });
 
 
@@ -111,14 +136,14 @@ diffBtnW.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
-    restart.style.display = 'block'
+    
 
     // logic of game
     let result = 0
     
     score.textContent = result
     let hitPosition
-    let currentTime = 16
+    let currentTime = 15
     let timerId = null
 function randomSquare(){
     square.forEach(squaresInside =>{
@@ -181,14 +206,14 @@ diffBtnE.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
-    restart.style.display = 'block'
+
 
     // logic of game
     let result = 0
     
     score.textContent = result
     let hitPosition
-    let currentTime = 16
+    let currentTime = 15
     let timerId = null
 
 function randomSquare(){
@@ -253,14 +278,14 @@ diffBtnR.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
-    restart.style.display = 'block'
+
 
     // logic of game
     let result = 0
     
     score.textContent = result
     let hitPosition
-    let currentTime = 16
+    let currentTime = 15
     let timerId = null
 
 function randomSquare(){
@@ -326,14 +351,14 @@ diffBtnT.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
-    restart.style.display = 'block'
+
 
     // logic of game
     let result = 0
     
     score.textContent = result
     let hitPosition
-    let currentTime = 16
+    let currentTime = 15
     let timerId = null
 
 function randomSquare(){
@@ -399,7 +424,6 @@ mainPage.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
     difficulty.style.display = 'none'
     colorBtn.style.display = 'none'
-    restart.style.display = 'none'
     rules.style.display = 'block'
     scoreText.style.display = 'none'
 });
@@ -432,7 +456,7 @@ start.addEventListener('click', () => {
     
     score.textContent = result
     let hitPosition
-    let currentTime = 16
+    let currentTime = 15
     let timerId = null
 
 function randomSquare(){
