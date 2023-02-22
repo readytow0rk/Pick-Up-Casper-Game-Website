@@ -11,7 +11,31 @@ const txt = document.querySelector('.lead')
 let body = document.querySelector('body')
 const colorFirst = document.querySelector('.changeColorQ')
 let colorBtn = document.querySelector('#colorCall')
+let settingsBtn = document.querySelector('#settingsBtn')
+let buttonsLevel = document.querySelector('.buttonsLevel')
+let difficulty = document.querySelector('#difficulty')
+let diffBtnQ = document.querySelector('#btnSwitchQ')
+let diffBtnW = document.querySelector('#btnSwitchW')
+let diffBtnE = document.querySelector('#btnSwitchE')
+let diffBtnR = document.querySelector('#btnSwitchR')
+let diffBtnT = document.querySelector('#btnSwitchT')
 
+// switch case
+
+//SETTINGS BUTTON 
+settingsBtn.addEventListener('click', () => {
+    start.style.display = 'none'
+    h.style.display = 'none'
+    score.style.display = 'none'
+    timeLeft.style.display = 'none'
+    timeText.style.display = 'none'
+    txt.style.display = 'none'
+    hH.style.display = 'none'
+    grid.style.display = 'none'
+    buttonsLevel.style.display = 'block'
+    difficulty.style.display = 'block'
+    colorBtn.style.display = 'block'
+});
 
 // Hide text and show game
 start.addEventListener('click', () => {
@@ -93,7 +117,6 @@ else {
 
 
 
-
     
 // let myelement = document.querySelector('body')
 
@@ -102,5 +125,27 @@ else {
 // console.log(boxShadow)
 
 
+// SWITCH CASE
 
+// let result = '0';
 
+// switch (qwerty) {
+//     case 5:
+        
+//         break;
+
+//     case 10:
+        
+//         break;
+
+//     case 15:
+        
+//         break;
+
+//     case 20:
+        
+//         break;
+
+//     default:
+//         break;
+// }

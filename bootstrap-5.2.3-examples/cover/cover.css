@@ -10,7 +10,18 @@
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
-
+#difficulty{
+  display: none;
+}
+#colorCall{
+  display: none;
+}
+.buttonsLevel{
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  
+}
 
 /*
  * Base structure
