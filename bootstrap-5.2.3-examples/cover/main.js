@@ -48,6 +48,24 @@ let rules = document.querySelector('#rules')
 
 let scoreText = document.querySelector('#scoreText')
 
+let textRulesQ = document.querySelector('#textRulesQ')
+
+
+// just for good looking 55 - 68
+start.style.display = 'block'
+    h.style.display = 'block'
+    score.style.display = 'none'
+    timeLeft.style.display = 'none'
+    timeText.style.display = 'none'
+    txt.style.display = 'block'
+    hH.style.display = 'none'
+    grid.style.display = 'none'
+    buttonsLevel.style.display = 'none'
+    difficulty.style.display = 'none'
+    colorBtn.style.display = 'none'
+    rules.style.display = 'block'
+    scoreText.style.display = 'none'
+    textRulesQ.style.display = 'block'
 
 // FIRST lEVEL
 
@@ -63,6 +81,8 @@ diffBtnQ.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
+    textRulesQ.style.display = 'none'
+    
     
 
     // logic of game
@@ -136,6 +156,7 @@ diffBtnW.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
+    textRulesQ.style.display = 'none'
     
 
     // logic of game
@@ -206,6 +227,7 @@ diffBtnE.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
+    textRulesQ.style.display = 'none'
 
 
     // logic of game
@@ -278,6 +300,7 @@ diffBtnR.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
+    textRulesQ.style.display = 'none'
 
 
     // logic of game
@@ -351,6 +374,7 @@ diffBtnT.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
+    textRulesQ.style.display = 'none'
 
 
     // logic of game
@@ -426,6 +450,7 @@ mainPage.addEventListener('click', () => {
     colorBtn.style.display = 'none'
     rules.style.display = 'block'
     scoreText.style.display = 'none'
+    textRulesQ.style.display = 'block'
 });
 
 settingsBtn.addEventListener('click', () => {
@@ -440,6 +465,7 @@ settingsBtn.addEventListener('click', () => {
     buttonsLevel.style.display = 'block'
     difficulty.style.display = 'block'
     colorBtn.style.display = 'block'
+    textRulesQ.style.display = 'none'
 });
 
 // Hide text and show game
@@ -452,7 +478,9 @@ start.addEventListener('click', () => {
     txt.style.display = 'none'
     hH.style.display = 'none'
     grid.style.display = 'flex'
+    textRulesQ.style.display = 'none'
     let result = 0
+    
     
     score.textContent = result
     let hitPosition
