@@ -51,6 +51,8 @@ let scoreText = document.querySelector('#scoreText')
 let textRulesQ = document.querySelector('#textRulesQ')
 
 
+
+
 // just for good looking 55 - 68
 start.style.display = 'block'
     h.style.display = 'block'
@@ -536,7 +538,7 @@ let countDownTimerId = setInterval(countDown, 1000)
 
 
 
-// try 1
+// CHANGE COLOR
 colorBtn.addEventListener('click',()=>{
 if (body.style.boxShadow = 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset') {
 body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
@@ -548,7 +550,47 @@ else {
     body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
   }
 })
-// try 2
+// FULLSCREEN MODE 
+
+let myDocument = document.documentElement;
+let btn = document.getElementById("fullScreen") 
+
+btn.addEventListener('click', ()=> {
+if(btn.textContent == 'Fullscreen'){
+    if(myDocument.requestFullscreen){
+        myDocument.requestFullscreen();
+    }
+    else if(myDocument.msRequestFullscreen){
+        myDocument.msRequestFullscreen();
+    }
+    else if(myDocument.mozRequestFullscreen){
+        myDocument.mozRequestFullscreen();
+    }
+    else if(myDocument.webkitRequestFullScreen ){
+        myDocument.webkitRequestFullScreen();
+    }
+
+    btn.textContent = 'Exit Fullscreen';
+}
+else{
+    if(document.exitFullscreen){
+        document.exitFullscreen();
+    }
+    else if(document.msexitFullscreen){
+        document.msexitFullscreen();
+    }
+    else if(document.mozexitFullscreen){
+        document.mozexitFullscreen();
+    } 
+    else if(document.webkitexitFullscreen){
+        document.webkitexitFullscreen
+    }
+
+    btn.textContent = 'Fullscreen';
+} 
+});
+// #
+  
 
 
 

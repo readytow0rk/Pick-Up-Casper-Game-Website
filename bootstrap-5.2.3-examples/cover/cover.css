@@ -86,16 +86,21 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
-.grid{
-  height: 37.875rem;
-  width: 37.875rem;
+.grid {
+  height: 21.875rem;
+  width: 22.875rem;
   flex-wrap: wrap;
   background-size: cover;
-  
+  margin-left: 7.5rem;
 }
-.squaresInside{
-  height: 12.5rem;
-  width: 12.5rem;
+@media (max-width: 767px) {
+  .grid{
+    margin-left: -1.7rem;
+  }
+  }
+.squaresInside {
+  height: 7.375rem;
+  width: 7.375rem;
   border: solid #fff 0.063rem;
   border-radius: 0.313rem;
 }
