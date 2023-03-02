@@ -53,7 +53,7 @@ let textRulesQ = document.querySelector('#textRulesQ')
 
 
 
-// just for good looking 55 - 68
+// just for good looking 55 - 70
 start.style.display = 'block'
     h.style.display = 'block'
     score.style.display = 'none'
@@ -114,6 +114,7 @@ square.forEach(squaresInside => {
             score.textContent = result
             hitPosition = null     
         }
+        
     })
 })
 
@@ -539,6 +540,7 @@ let countDownTimerId = setInterval(countDown, 1000)
 
 
 // CHANGE COLOR
+
 colorBtn.addEventListener('click',()=>{
 if (body.style.boxShadow = 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset') {
 body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
@@ -550,6 +552,9 @@ else {
     body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
   }
 })
+
+fewBtn(mainPage, settingsBtn)
+
 // FULLSCREEN MODE 
 
 let myDocument = document.documentElement;
