@@ -567,30 +567,30 @@ body.style.boxShadow = 'rgba(174, 0, 255, 0.5) 0px 0px 80px 0px inset'
 });
 
 
+//
 
 
 
-
-// colorBtn.addEventListener('click',()=>{
-// if (body.style.boxShadow = 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset') {
-// body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
-// }
-// else if (body.style.boxShadow  = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset') {
-// body.style.boxShadow  = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset'
-// }
-// else if (body.style.boxShadow  = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset') {
-// body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
-// }
-// else if (body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset') {
-// body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
-// }
-// else if (body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset') {
-// body.style.boxShadow  = 'rgba(246, 255, 0, 0.5) 0px 0px 80px 0px inset'
-// }
-// else {
-//     body.style.boxShadow  = 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset'
-//   }
-// })
+colorBtn.addEventListener('click',()=>{
+if (body.style.boxShadow = 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
+}
+else if (body.style.boxShadow  = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset'
+}
+else if (body.style.boxShadow  = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
+}
+else if (body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
+}
+else if (body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(246, 255, 0, 0.5) 0px 0px 80px 0px inset'
+}
+else {
+    body.style.boxShadow  = 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset'
+  }
+})
 
 
 
