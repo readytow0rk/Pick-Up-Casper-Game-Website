@@ -48,7 +48,9 @@ let rules = document.querySelector('#rules')
 
 let scoreText = document.querySelector('#scoreText')
 
-let textRulesQ = document.querySelector('#textRulesQ')
+let textRulesQ = document.querySelector('#textRulesQ') 
+
+let textRefresh = document.querySelector('#textRefresh') 
 
 
 
@@ -68,6 +70,7 @@ start.style.display = 'block'
     rules.style.display = 'block'
     scoreText.style.display = 'none'
     textRulesQ.style.display = 'block'
+    textRefresh.style.display = 'none'
     
 
 // FIRST lEVEL
@@ -85,6 +88,7 @@ diffBtnQ.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
     
     
 
@@ -142,9 +146,6 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
- 
-});
 
 
 //start second level 
@@ -161,6 +162,7 @@ diffBtnW.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
     
 
     // logic of game
@@ -215,9 +217,7 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
-    
-});
+
 // start third level
 diffBtnE.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
@@ -232,6 +232,7 @@ diffBtnE.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
 
 
     // logic of game
@@ -287,9 +288,7 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
-        
-});
+
 
 // start 4th level
 diffBtnR.addEventListener('click', () => {
@@ -305,6 +304,7 @@ diffBtnR.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
 
 
     // logic of game
@@ -360,9 +360,6 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
-         
-});
 
 // start 5th level
 
@@ -379,6 +376,7 @@ diffBtnT.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
 
 
     // logic of game
@@ -434,10 +432,7 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
-   
-      
-});
+
 
 // finish with levels
 mainPage.addEventListener('click', () => {
@@ -455,6 +450,8 @@ mainPage.addEventListener('click', () => {
     rules.style.display = 'block'
     scoreText.style.display = 'none'
     textRulesQ.style.display = 'block'
+    textRefresh.style.display = 'none'
+    
 });
 
 settingsBtn.addEventListener('click', () => {
@@ -470,6 +467,7 @@ settingsBtn.addEventListener('click', () => {
     difficulty.style.display = 'block'
     colorBtn.style.display = 'block'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'block'
 });
 
 // Hide text and show game
@@ -483,6 +481,7 @@ start.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
     let result = 0
     
     

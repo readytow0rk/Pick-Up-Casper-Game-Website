@@ -13,6 +13,9 @@
 #difficulty{
   display: none;
 }
+#textRefresh{
+  display: none;
+}
 #restart{
   padding: 0.5rem;
   display: none;
@@ -92,6 +95,7 @@ body {
   flex-wrap: wrap;
   background-size: cover;
   margin-left: 7.5rem;
+  
 }
 @media (max-width: 767px) {
   .grid{
