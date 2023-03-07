@@ -48,7 +48,9 @@ let rules = document.querySelector('#rules')
 
 let scoreText = document.querySelector('#scoreText')
 
-let textRulesQ = document.querySelector('#textRulesQ')
+let textRulesQ = document.querySelector('#textRulesQ') 
+
+let textRefresh = document.querySelector('#textRefresh') 
 
 
 
@@ -68,6 +70,7 @@ start.style.display = 'block'
     rules.style.display = 'block'
     scoreText.style.display = 'none'
     textRulesQ.style.display = 'block'
+    
 
 // FIRST lEVEL
 
@@ -141,9 +144,6 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
- 
-});
 
 
 //start second level 
@@ -207,16 +207,14 @@ function countDown() {
         clearInterval(timerId)
         alert('GAME OVER! YOUR SCORE IS ' + result)
     }
-
+    
 }
 
 
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
-    
-});
+
 // start third level
 diffBtnE.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
@@ -286,9 +284,7 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
-        
-});
+
 
 // start 4th level
 diffBtnR.addEventListener('click', () => {
@@ -358,9 +354,6 @@ function countDown() {
 
 let countDownTimerId = setInterval(countDown, 1000)
      
-});
-restart.addEventListener('click', () => {
-         
 });
 
 // start 5th level
@@ -433,10 +426,7 @@ function countDown() {
 let countDownTimerId = setInterval(countDown, 1000)
      
 });
-restart.addEventListener('click', () => {
-   
-      
-});
+
 
 // finish with levels
 mainPage.addEventListener('click', () => {
@@ -454,6 +444,7 @@ mainPage.addEventListener('click', () => {
     rules.style.display = 'block'
     scoreText.style.display = 'none'
     textRulesQ.style.display = 'block'
+    
 });
 
 settingsBtn.addEventListener('click', () => {
@@ -469,6 +460,7 @@ settingsBtn.addEventListener('click', () => {
     difficulty.style.display = 'block'
     colorBtn.style.display = 'block'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'block'
 });
 
 // Hide text and show game
@@ -541,52 +533,62 @@ let countDownTimerId = setInterval(countDown, 1000)
 
 // CHANGE COLOR
 
-colorBtn.addEventListener('click', () => {
-body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
-});
+// colorBtn.addEventListener('click', () => {
+// body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
+// });
 
 
-colorBtn.addEventListener('click', () => {
-body.style.boxShadow = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset'
-});
+// colorBtn.addEventListener('click', () => {
+// body.style.boxShadow = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset'
+// });
 
-colorBtn.addEventListener('click', () => {
-body.style.boxShadow = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
-});
+// colorBtn.addEventListener('click', () => {
+// body.style.boxShadow = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
+// });
 
-colorBtn.addEventListener('click', () => {
-body.style.boxShadow = 'rgba(246, 255, 0, 0.5) 0px 0px 80px 0px inset'
-});
+// colorBtn.addEventListener('click', () => {
+// body.style.boxShadow = 'rgba(246, 255, 0, 0.5) 0px 0px 80px 0px inset'
+// });
 
-colorBtn.addEventListener('click', () => {
-body.style.boxShadow = 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset'
-});
+// colorBtn.addEventListener('click', () => {
+// body.style.boxShadow = 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset'
+// });
 
-colorBtn.addEventListener('click', () => {
-body.style.boxShadow = 'rgba(174, 0, 255, 0.5) 0px 0px 80px 0px inset'
-});
+// colorBtn.addEventListener('click', () => {
+// body.style.boxShadow = 'rgba(174, 0, 255, 0.5) 0px 0px 80px 0px inset'
+// });
 
 
 //
 
 
-
 colorBtn.addEventListener('click',()=>{
-if (body.style.boxShadow = 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset') {
-body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
+    console.log(body.style.boxShadow)
+if (body.style.boxShadow == 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset') {
+    body.style.boxShadow = 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset'
 }
-else if (body.style.boxShadow  = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset') {
+else if (body.style.boxShadow  == 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset') {
 body.style.boxShadow  = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset'
 }
-else if (body.style.boxShadow  = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset') {
+else if (body.style.boxShadow  == 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset') {
 body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
 }
-else if (body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset') {
-body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
+else if (body.style.boxShadow  == 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(255, 0, 157, 0.5) 0px 0px 80px 0px inset'
 }
-else if (body.style.boxShadow  = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset') {
+else if (body.style.boxShadow  == 'rgba(255, 0, 157, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
+}
+else if (body.style.boxShadow  == 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset') {
 body.style.boxShadow  = 'rgba(246, 255, 0, 0.5) 0px 0px 80px 0px inset'
 }
+else if (body.style.boxShadow  == 'rgba(246, 255, 0, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset'
+}
+else if (body.style.boxShadow  == 'rgba(0, 0, 0, 0.5) 0px 0px 80px 0px inset') {
+body.style.boxShadow  = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset'
+}
+
 else {
     body.style.boxShadow  = 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset'
   }
