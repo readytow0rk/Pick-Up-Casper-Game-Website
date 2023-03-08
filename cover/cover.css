@@ -1,0 +1,129 @@
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+#difficulty{
+  display: none;
+}
+#textRefresh{
+  display: none;
+}
+#restart{
+  padding: 0.5rem;
+  display: none;
+}
+#colorCall{
+  display: none;
+}
+#main.page {
+  display: block;
+}
+.buttonsLevel{
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.btn-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 5px -1rem 0rem rgb(0 0 0 / 50%);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+/* add random add in JS */
+.changeColorQ {
+  text-shadow: 0 .05rem .1rem rgba(0, 255, 0);     
+}
+.changeColorW {
+  text-shadow: 0 .05rem .1rem rgb(246, 255, 0); 
+}
+.changeColorE {
+  text-shadow: 0 .05rem .1rem rgb(255, 0, 0);
+}
+.changeColorR {
+  text-shadow: 0 .05rem .1rem rgb(0, 255, 238);
+}
+.changeColorT {
+  text-shadow: 0 .05rem .1rem rgb(174, 0, 255); 
+}
+.changeColorY {
+  text-shadow: 0 .05rem .1rem rgba(255, 0, 157);  
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.grid {
+  height: 21.875rem;
+  width: 22.875rem;
+  flex-wrap: wrap;
+  background-size: cover;
+  margin-left: 7.5rem;
+  
+}
+@media (max-width: 767px) {
+  .grid{
+    margin-left: -1.7rem;
+  }
+  }
+.squaresInside {
+  height: 7.375rem;
+  width: 7.375rem;
+  border: solid #fff 0.063rem;
+  border-radius: 0.313rem;
+}
+.mole{
+  background-image: url('casper1.png');
+  background-size: cover;
+}
+.grid, .square {
+  display:none
+}
+h1 {
+  display: none;
+}
+
+#btnStart:hover {
+  background-color: rgb(0, 0, 0);
+}
+body {
+  text-shadow: 2px 1rem 0.2rem rgb(0 0 0 / 50%);
+  box-shadow: inset 0 0 5rem rgb(0 0 0 / 50%);
+  
+}
