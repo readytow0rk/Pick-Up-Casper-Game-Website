@@ -70,6 +70,7 @@ start.style.display = 'block'
     rules.style.display = 'block'
     scoreText.style.display = 'none'
     textRulesQ.style.display = 'block'
+    textRefresh.style.display = 'none'
     
 
 // FIRST lEVEL
@@ -87,6 +88,7 @@ diffBtnQ.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
     
     
 
@@ -160,6 +162,7 @@ diffBtnW.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
     
 
     // logic of game
@@ -229,6 +232,7 @@ diffBtnE.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
 
 
     // logic of game
@@ -300,6 +304,7 @@ diffBtnR.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
 
 
     // logic of game
@@ -371,6 +376,7 @@ diffBtnT.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
 
 
     // logic of game
@@ -444,6 +450,7 @@ mainPage.addEventListener('click', () => {
     rules.style.display = 'block'
     scoreText.style.display = 'none'
     textRulesQ.style.display = 'block'
+    textRefresh.style.display = 'none'
     
 });
 
@@ -474,6 +481,7 @@ start.addEventListener('click', () => {
     hH.style.display = 'none'
     grid.style.display = 'flex'
     textRulesQ.style.display = 'none'
+    textRefresh.style.display = 'none'
     let result = 0
     
     
