@@ -55,9 +55,39 @@ If you will choose 1 level and will not wait untill hi end start new both levels
 ### Validator Testing 
 
 - HTML
-    - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
+    - 1 Error: No p element in scope but a p end tag seen.
+From line 149, column 269; to line 149, column 272
+lty.Enjoy!</p>↩    
+    - 2 Error: Element p not allowed as child of element h2 in this context. (Suppressing further errors from this subtree.)
+From line 149, column 269; to line 149, column 272
+lty.Enjoy!</p>↩  
+    - 3 Error: Element p not allowed as child of element h2 in this context. (Suppressing further errors from this subtree.)
+From line 150, column 5; to line 150, column 20
+!</p>↩    <p class="lead">↩
+    - 4 No p element in scope but a p end tag seen.
+From line 154, column 5; to line 154, column 8
+t</a>↩    </p>↩  
+    - 5 Error: Quote " in attribute name. Probable cause: Matching quote missing somewhere earlier.
+At line 159, column 83
+s=" text-white ">@mdo</a> for 
+    - 6 Error: Bad value _blank class= for attribute target on element a: Reserved keyword blank class= used.
+From line 159, column 15; to line 159, column 84
+<p>Thanks <a href="https://twitter.com/mdo" target="_blank class=" text-white ">@mdo</
+    - 7 Error: Attribute text-white not allowed on element a at this point.
+From line 159, column 15; to line 159, column 84
+<p>Thanks <a href="https://twitter.com/mdo" target="_blank class=" text-white ">@mdo</
+
+    - 8 Error: Attribute " not allowed on element a at this point.
+
+From line 159, column 15; to line 159, column 84
+
+<p>Thanks <a href="https://twitter.com/mdo" target="_blank class=" text-white ">@mdo</
+
+I tried to fix all this errors and after tidy and changing some value i not recive a errors, but everything stop working so i delete all fix nd leave it like now because now it working.
+     [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Freadytow0rk.github.io%2FPick-Up-Casper-reaction-check-%2F)
 - CSS
-    - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - 1 Parse Error (16 times) and the rest it is warnings.
+     [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Freadytow0rk.github.io%2FPick-Up-Casper-reaction-check-%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - JavaScript
     - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
       - The following metrics were returned: 

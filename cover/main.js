@@ -54,8 +54,6 @@ let textRefresh = document.querySelector('#textRefresh')
 
 
 
-
-// just for good looking 55 - 70
 start.style.display = 'block'
     h.style.display = 'block'
     score.style.display = 'none'
@@ -73,8 +71,6 @@ start.style.display = 'block'
     textRefresh.style.display = 'none'
     
 
-// FIRST lEVEL
-
 diffBtnQ.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
     difficulty.style.display = 'none'
@@ -91,8 +87,6 @@ diffBtnQ.addEventListener('click', () => {
     textRefresh.style.display = 'none'
     
     
-
-    // logic of game
     let result = 0
     
     score.textContent = result
@@ -148,7 +142,6 @@ let countDownTimerId = setInterval(countDown, 1000)
 });
 
 
-//start second level 
 diffBtnW.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
     difficulty.style.display = 'none'
@@ -165,7 +158,6 @@ diffBtnW.addEventListener('click', () => {
     textRefresh.style.display = 'none'
     
 
-    // logic of game
     let result = 0
     
     score.textContent = result
@@ -218,7 +210,6 @@ let countDownTimerId = setInterval(countDown, 1000)
      
 });
 
-// start third level
 diffBtnE.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
     difficulty.style.display = 'none'
@@ -235,7 +226,6 @@ diffBtnE.addEventListener('click', () => {
     textRefresh.style.display = 'none'
 
 
-    // logic of game
     let result = 0
     
     score.textContent = result
@@ -290,7 +280,6 @@ let countDownTimerId = setInterval(countDown, 1000)
 });
 
 
-// start 4th level
 diffBtnR.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
     difficulty.style.display = 'none'
@@ -307,7 +296,6 @@ diffBtnR.addEventListener('click', () => {
     textRefresh.style.display = 'none'
 
 
-    // logic of game
     let result = 0
     
     score.textContent = result
@@ -361,7 +349,6 @@ let countDownTimerId = setInterval(countDown, 1000)
      
 });
 
-// start 5th level
 
 diffBtnT.addEventListener('click', () => {
     buttonsLevel.style.display = 'none'
@@ -378,8 +365,6 @@ diffBtnT.addEventListener('click', () => {
     textRulesQ.style.display = 'none'
     textRefresh.style.display = 'none'
 
-
-    // logic of game
     let result = 0
     
     score.textContent = result
@@ -434,7 +419,6 @@ let countDownTimerId = setInterval(countDown, 1000)
 });
 
 
-// finish with levels
 mainPage.addEventListener('click', () => {
     start.style.display = 'block'
     h.style.display = 'block'
@@ -470,7 +454,6 @@ settingsBtn.addEventListener('click', () => {
     textRefresh.style.display = 'block'
 });
 
-// Hide text and show game
 start.addEventListener('click', () => {
     start.style.display = 'none'
     h.style.display = 'block'
@@ -537,38 +520,6 @@ let countDownTimerId = setInterval(countDown, 1000)
 });
 
 
-// fewBtn(mainPage, settingsBtn)
-
-// CHANGE COLOR
-
-// colorBtn.addEventListener('click', () => {
-// body.style.boxShadow = 'rgba(255, 255, 255, 0.5) 0px 0px 80px 0px inset'
-// });
-
-
-// colorBtn.addEventListener('click', () => {
-// body.style.boxShadow = 'rgba(0, 255, 221, 0.5) 0px 0px 80px 0px inset'
-// });
-
-// colorBtn.addEventListener('click', () => {
-// body.style.boxShadow = 'rgba(232, 105, 252, 0.5) 0px 0px 80px 0px inset'
-// });
-
-// colorBtn.addEventListener('click', () => {
-// body.style.boxShadow = 'rgba(246, 255, 0, 0.5) 0px 0px 80px 0px inset'
-// });
-
-// colorBtn.addEventListener('click', () => {
-// body.style.boxShadow = 'rgba(255, 0, 0, 0.5) 0px 0px 80px 0px inset'
-// });
-
-// colorBtn.addEventListener('click', () => {
-// body.style.boxShadow = 'rgba(174, 0, 255, 0.5) 0px 0px 80px 0px inset'
-// });
-
-
-//
-
 
 colorBtn.addEventListener('click',()=>{
     console.log(body.style.boxShadow)
@@ -602,9 +553,6 @@ else {
   }
 })
 
-
-
-// FULLSCREEN MODE 
 
 let myDocument = document.documentElement;
 let btn = document.getElementById("fullScreen") 
@@ -643,40 +591,3 @@ else{
     btn.textContent = 'Fullscreen';
 } 
 });
-// #
-  
-
-
-
-    
-// let myelement = document.querySelector('body')
-
-// let boxShadow = window.getComputedStyle(body).boxShadow
-
-// console.log(boxShadow)
-
-
-// SWITCH CASE
-
-// let result = '0';
-
-// switch (qwerty) {
-//     case 5:
-        
-//         break;
-
-//     case 10:
-        
-//         break;
-
-//     case 15:
-        
-//         break;
-
-//     case 20:
-        
-//         break;
-
-//     default:
-//         break;
-// }
