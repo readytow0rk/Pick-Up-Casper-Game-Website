@@ -40,28 +40,17 @@ I recomend press button 'Refresh' if you fast change difficulty, if you pass lev
 
 - __The Score Area__
 
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
+  - This section will allow the user to see exactly how many ghosts hi catch.
+![score](media/5.png)
 
-![score](media/love_maths_answer.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
-### Features Left to Implement
-
-- Another feature idea
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+The site supports most browsers and looks good.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+Project works and looks good for different resolution.I checked on: Iphone SE, Pixel 5,Samsung galaxy S8+, Galaxy s ultra, Ipad air, Mini, Surface pro 7 and computer/laptop resolution. 
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
+If you will choose 1 level and will not wait untill hi end start new both levels will working in same time and you literally cant understand how many time you have and scores as well.
 
 ### Validator Testing 
 
