@@ -137,7 +137,7 @@ function countDown() {
     if(currentTime == 0 ){
         clearInterval(countDownTimerId)
         clearInterval(timerId)
-        alert('YOU CAUGHT' + result + 'ghosts')
+        alert('GAME OVER! YOUR SCORE IS ' + result)
     }
 
 }
@@ -208,7 +208,7 @@ function countDown() {
     if(currentTime == 0 ){
         clearInterval(countDownTimerId)
         clearInterval(timerId)
-        alert('YOU CAUGHT' + result + 'ghosts')
+        alert('GAME OVER! YOUR SCORE IS ' + result)
     }
     
 }
@@ -279,7 +279,7 @@ function countDown() {
     if(currentTime == 0 ){
         clearInterval(countDownTimerId)
         clearInterval(timerId)
-        alert('YOU CAUGHT' + result + 'ghosts')
+        alert('GAME OVER! YOUR SCORE IS ' + result)
     }
 
 }
@@ -351,7 +351,7 @@ function countDown() {
     if(currentTime == 0 ){
         clearInterval(countDownTimerId)
         clearInterval(timerId)
-        alert('YOU CAUGHT' + result + 'ghosts')
+        alert('GAME OVER! YOUR SCORE IS ' + result)
     }
 
 }
@@ -423,7 +423,7 @@ function countDown() {
     if(currentTime == 0 ){
         clearInterval(countDownTimerId)
         clearInterval(timerId)
-        alert('YOU CAUGHT' + result + 'ghosts')
+        alert('GAME OVER! YOUR SCORE IS ' + result)
     }
 
 }
@@ -526,7 +526,7 @@ function countDown() {
     if(currentTime == 0 ){
         clearInterval(countDownTimerId)
         clearInterval(timerId)
-        alert('YOU CAUGHT' + result + 'ghosts')
+        alert('GAME OVER! YOUR SCORE IS ' + result)
     }
 
 }
