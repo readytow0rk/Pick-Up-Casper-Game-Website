@@ -1,36 +1,42 @@
-# Love Maths
+# Pick Up Casper
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+This is simple js game, where you can check your reaction.Here we have 5 levels with different speed.1 speed for kids, 4 for regular people.
 
-For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers. 
+Here you need just tap on ghost. You have 15 seconds for catch the most ghosts.
 
-![Responsice Mockup](media/love_maths_mockup.png)
+![Responsice Mockup](media/1.png)
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+On the site you can compete with your friends who will score the most points.
+
+Is 'Settings' sector you can customize color, set up Fullscreen and choose difficulty.
+
+I recomend press button 'Refresh' if you fast change difficulty, if you pass level and after choose another 'Refresh' no need.
 
 ### Existing Features
 
-- __The Love Maths Logo and Heading__
+- __The Pick Up Casper Heading__
 
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
+  - Featured at the top of the page, Pick Up Casper  heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
 
-![Logo](media/love_maths_logo.png)
+![Logo](media/2.png)
 
 - __The Game Area__
 
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
+  - This section will allow the user to play the catch game. The user will be able to easily see ghosts.
 
-![Game](media/love_maths_icons.png)
+  - This sector open after tab 'Start' button or choose any level in 'Settings'. 
 
-- __The Question section__
+![Game](media/3.png)
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
+- __The Settings section__
 
-![Question](media/love_maths_question.png)
+  - The question 'Settings' is where the user will be able to see the tip for refresh levels.
+
+  - The user will be able to choose level for try and turn on fullscreen mode as well. 
+
+![Question](media/4.png)
 
 - __The Score Area__
 
